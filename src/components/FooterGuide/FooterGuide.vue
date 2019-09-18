@@ -54,6 +54,7 @@ export default {
   bottom 0
   display flex
   border-top  1px #d9d9d9 solid 
+  background-color white
   .footerItem
     display flex
     flex 1

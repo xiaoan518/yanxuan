@@ -48,7 +48,7 @@ export default {
 <style lang="stylus" rel="stylesheet/stylus" scoped>
 .footer
   width 100%
-  height 50px
+  height 98px
   position fixed
   left 0
   bottom 0
@@ -64,10 +64,10 @@ export default {
     &.on
       color #b4282d
     .iconfont
-      font-size 24px
+      font-size 39px
       margin 5px 0
     span 
-      font-size 10px
+      font-size 24px
             
        
 

@@ -48,7 +48,7 @@
         <i class="iconfont  icon-anquan gauge "></i>
         30天无忧退货
       </span>
-       <span>
+       <span class="tuikuan">
         <i class="iconfont icon-tuikuan"></i>
         48小时快速退款
       </span>
@@ -56,16 +56,37 @@
 
     <!-- 商品列表 -->
     <div class="commodity">
-      <a href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/c6fd8835a6400b7da7a016ad85506b69.png"  alt=""></a>
-      <a href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/fede8b110c502ec5799702d5ec824792.png"  alt=""></a>
-      <a href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/896a3beac514ae8f40aafe028e5fec56.png"  alt=""></a>
-      <a href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/37520d1204a0c55474021b43dac2a69e.png"   alt=""></a>
-      <a href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/37520d1204a0c55474021b43dac2a69e.png"   alt=""></a>
-      <a href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/559d2a240ec20b096590a902217009ff.png"   alt=""></a>
-      <a href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/5c088559ebcc3f0ffcda663f04dfbeb2.png"   alt=""></a>
-      <a href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/fbca8e1f2948f0c09fc7672c2c125384.png"  alt=""></a>
-      <a href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/f7281169d4e82d5d8d52aa1fec83fe01.png"   alt=""></a>
-      <a href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/12e8efd15b9b210ab156a7ee9b340548.gif"   alt=""></a>
+      <a class="a-commodity" href="javascript:;">
+      <img class="img" src="https://yanxuan.nosdn.127.net/c6fd8835a6400b7da7a016ad85506b69.png"  alt="">
+      <span class="z-commodity">新品首发</span>
+      </a>
+      <a class="a-commodity" href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/fede8b110c502ec5799702d5ec824792.png"  alt="">
+      <span class="z-commodity">新品首发</span>
+      </a>
+      <a class="a-commodity" href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/896a3beac514ae8f40aafe028e5fec56.png"  alt="">
+      <span class="z-commodity">新品首发</span>
+      </a>
+      <a class="a-commodity" href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/37520d1204a0c55474021b43dac2a69e.png"   alt="">
+      <span class="z-commodity">新品首发</span>
+      </a>
+      <a class="a-commodity" href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/37520d1204a0c55474021b43dac2a69e.png"   alt="">
+      <span class="z-commodity">新品首发</span>
+      </a>
+      <a class="a-commodity" href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/559d2a240ec20b096590a902217009ff.png"   alt="">
+      <span class="z-commodity">新品首发</span>
+      </a>
+      <a class="a-commodity" href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/5c088559ebcc3f0ffcda663f04dfbeb2.png"   alt="">
+      <span class="z-commodity">新品首发</span>
+      </a>
+      <a class="a-commodity" href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/fbca8e1f2948f0c09fc7672c2c125384.png"  alt="">
+      <span class="z-commodity">新品首发</span>
+      </a>
+      <a class="a-commodity" href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/f7281169d4e82d5d8d52aa1fec83fe01.png"   alt="">
+      <span class="z-commodity">新品首发</span>
+      </a>
+      <a class="a-commodity" href="javascript:;"><img class="img" src="https://yanxuan.nosdn.127.net/12e8efd15b9b210ab156a7ee9b340548.gif"   alt="">
+      <span class="z-commodity">新品首发</span>
+      </a>
     </div>
 
     <!-- 广告 -->
@@ -77,6 +98,17 @@
 
     <!-- 促销 -->
     <div class="v-promotion">
+      <div class="data-promotion">
+        <a href="javascript:;">
+          <div class="title">9.9超值专区</div>
+          <div class="desc">190款商品定价只降</div>
+          <div class="picList">
+            <img class="img" src="https://yanxuan-item.nosdn.127.net/b2065eab67acc5923a8ec71167a35f6a.png" alt="">
+            <img class="img" src="https://yanxuan-item.nosdn.127.net/569ab2c87df93c56de39b8c890463242.png" alt="">
+          </div>
+        </a>
+      </div>
+
       <div class="data-promotion">
         <a href="javascript:;">
           <div class="title">9.9超值专区</div>
@@ -123,48 +155,50 @@ export default {
   // background red
 .header
   width 100%
-  height 50px
+  height 87.97px
   background white
   display flex
-  line-height 50px
+  line-height 87.97px
   .header-log
     background-image url('//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-a90bdaae6b.png') // yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-a90bdaae6b.png)
-    background-size 70px
+    background-size 1.933333rem
     background-repeat no-repeat
-    width 85px
-    height 25px
+    width 150px
+    height 39.98px
     margin-left 15px
-    margin-top 10px
-    // margin-right 1px
+    margin-top 25px
   .header-search
-    margin-top 7px
-    width 200px
-    height 30px
+    margin-top 20px
+    margin-left 10px
+    width 442px
+    height 56px
     display flex
-    line-height 30px
+    line-height 56px
     background #ededed
     border-radius 5px
     .iconfont
       width 50px
       height 50px
       margin-left 10px
-      font-size 20px
+      font-size 30px
       color #666
     .placeholder
       color #666
       margin-left -18px
-      font-size 10px
+      font-size 30px
   .btn
     color #b4282d
     background white
-    width 40px
-    height 20px
+    width 74px
+    height 40px
     border 1px #b4282d solid
-    margin-top 13px
-    margin-left 17px
+    font-size 25px
+    margin-top 30px
+    margin-left 30px
 .home-nav
   width 100%
   height 100%
+  margin-top 15px
   // background red
   .nav
     width 100%
@@ -174,11 +208,13 @@ export default {
       flex 1
       justify-content center
       align-items center
-      font-size 15px
+      font-size .37333rem
       color #666
       li
-        margin-right 15px
+        margin-right 40px
         font-weight 510
+        .iconfont
+          font-size 30px
         &:last-child 
           margin-left  20px
         .iconfont
@@ -189,59 +225,76 @@ export default {
 .swiper-container 
     width: 100%;
     height: 100%;
-    margin-top 5px
+    margin-top 20px
   .swiper-wrapper
     width 100%
-    height 200px
+    height 400px
     img 
       width 100%
-      height 200px
+      height 400px
 .sale
   width 100%
-  height 30px
-  line-height 30px
+  height 80px
+  line-height 80px
+  span 
+    margin-left  15px
+  .tuikuan
   .iconfont
     color #b4282d
-    font-size 20px
-    margin 0 5px
+    font-size .32rem
+    margin-left 15px
 .commodity
   width 100%
-  height 100%  
+  height 100%
+  display flex
+  flex-wrap wrap
+  text-align center
+  
+  
+  .a-commodity
+    display flex
+    flex-direction column
+    .z-commodity
+      margin-top 15px
+      margin-left 15px
+    
   .img
-    width 65px
-    height 65px
-    margin 0 5px
+    width 110px
+    height 110px
+    margin-right 8px
+    margin-left 26px
 .data-reacted
   widows 100%
   height 100%
-  margin-top 5px
+  margin-top 25px
   .img
     width 100%
-    height 70px
+    height 127px
 .v-promotion
   width 100%
   height 100%
+  display flex
   
   .data-promotion
-    width 50%
-    height 150px
+    width 342px
+    height 264px
     background-color rgb(245,245,245)
-    margin-left 10px
-    margin-top 5px
+    margin-left 23px
+    margin-top 25px
+    
     overflow hidden
     .title
       width 100%
       color #333
-      margin 15px 0 10px 15px
-      font-size 15px
+      margin 25px 0 20px 25px
+      font-size 30px
     .desc
       width 100%
-      padding-left 15px
-
-
+      padding-left 25px
     .img
-      width 50px
-      height 50px
+      width 150px
+      height 150px
+      
   
   </style>
 

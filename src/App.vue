@@ -1,20 +1,19 @@
 
 <template>
-  
-    <div>
-        <router-view></router-view>
-        <FooterGuide/>
-    </div>
+  <div >
+    <router-view></router-view>
+    <FooterGuide />
+  </div>
 </template>
 
 <script>
 //引入底部的导航组件FooterGuide.vue
-import FooterGuide from './components/FooterGuide/FooterGuide'
+import FooterGuide from "./components/FooterGuide/FooterGuide";
 export default {
-    //注册组件
-    components: {
-        FooterGuide 
-    }
+  //注册组件
+  components: {
+    FooterGuide
+  }
 };
 </script>
 

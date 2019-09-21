@@ -3,12 +3,12 @@
     <!-- 个人头部 -->
     <div class="profile-header">
       <ul class="profile-list">
-        <li  class="home-li first-li" >
+        <li  class="home-li first-li"  @click="goto('./home')">
           <a href="javascriot:;">
             <i class="iconfont icon-menu-home-normal"></i>
           </a>
         </li>
-        <li>
+        <li  @click="goto('./home')">
         <a class="home-li center-li" href="javascript:;">网易严选</a>
       </li>
       <li class="home-li center2-li">
@@ -16,7 +16,7 @@
          <i class="iconfont icon-magnifier"></i>
         </a>
       </li>
-      <li class="home-li right-li">
+      <li class="home-li right-li" @click="goto('./shopping')">
          <a href="javascript:;">
             <i class="iconfont icon-dinglanyoucegouwuche21"></i>
           </a>
@@ -40,7 +40,7 @@
           </button>
      
      
-        <button class="e-register">
+        <button class="e-register" >
           <i class="iconfont icon-youxiang"></i>
           邮箱账号登录登录
           </button>
@@ -78,7 +78,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+   methods: {
+    //根据传入的地址。跳转到对应的路由界面
+    goto(path){
+      this.$router.replace(path)
+    }
+  }
+  
+};
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" >
@@ -171,15 +179,16 @@ export default {};
       line-height 50px
       position absolute
       bottom 5px
-      left 75px
+      left 0px
       font-size 27px
+      
       li
         float left
         .iconfont
           margin-right 10px
           font-size 30px
       .WeChat
-        margin-left 80px
+        margin-left 120px
       .qq
        margin-left 80px
       .microblog

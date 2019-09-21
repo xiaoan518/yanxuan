@@ -126,11 +126,12 @@ export default {
 };
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus" >
+<style lang="stylus" rel="stylesheet/stylus" scope >
 .header-class
   width 100%
-  height 1550px
-  background-color white !important
+  height 1500px
+  // box-sizing border-box
+  background-color white 
   .header-search
     width 700px
     margin 0 auto

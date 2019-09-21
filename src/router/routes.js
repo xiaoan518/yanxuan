@@ -15,19 +15,31 @@ import Profile from '../pages/Profile/Profile.vue'
 export default [
   {
     path: '/home',
-    component: Home
+    component: Home,
+    meta: {
+      isShowFooter: true
+    }
   },
   {
     path: '/classify',
-    component: Classify
+    component: Classify,
+      meta: {
+        isShowFooter: true
+      }
   },
   {
     path: '/food',
-    component: Food
+    component: Food,
+      meta: {
+        isShowFooter: true
+      }
   },
   {
     path: '/shopping',
-    component: ShopPing
+    component: ShopPing,
+      meta: {
+        isShowFooter: true
+      }
   },
   {
     path: '/profile',

@@ -7,7 +7,7 @@
         <i class="iconfont icon-magnifier"></i>
         <span class="placeholder">搜索商品, 共22629款好物</span>
       </div>
-      <button class="btn">登录</button>
+      <button class="btn" @click="goto('./profile')">登录</button>
     </div>
     <!-- 首页导航栏 -->
     <div class="home-nav">
@@ -132,6 +132,12 @@ import 'swiper/css/swiper.css'
 
 export default {
 
+   methods: {
+    //根据传入的地址。跳转到对应的路由界面
+    goto(path){
+      this.$router.replace(path)
+    }
+  },
   mounted () {
     new Swiper ('.swiper-container', {
     loop: true, // 循环模式选项
